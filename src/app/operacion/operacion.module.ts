@@ -1,15 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { OperacionComponent } from './components/operacion/operacion.component';
+import { FormsModule } from '@angular/forms';
 
-
+import { OperacionComponent } from './pages/operacion/operacion.component';
 
 @NgModule({
   declarations: [
     OperacionComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ]
 })
 export class OperacionModule { }

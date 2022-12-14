@@ -1,5 +1,6 @@
 .card {
     margin-top: 8rem;
+    min-height: 15rem;
 }
 
 .card-title{

@@ -1,17 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CiudadComponent } from './components/ciudad/ciudad.component';
+
 import { CiudadesComponent } from './pages/ciudades/ciudades.component';
+import { FormsModule } from '@angular/forms';
 
 
 
 @NgModule({
   declarations: [
-    CiudadComponent,
-    CiudadesComponent
+    CiudadesComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ]
 })
 export class CiudadesModule { }
