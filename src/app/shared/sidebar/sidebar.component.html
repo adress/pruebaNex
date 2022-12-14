@@ -1,0 +1,34 @@
+<mat-sidenav #sidenav mode="side">
+
+    <mat-toolbar color="primary">
+        <span>Menú</span>
+        <button style="left: 180px" mat-icon-button (click)="sidenav.toggle()">
+            <mat-icon>menu</mat-icon>
+        </button>
+    </mat-toolbar>
+
+    <mat-nav-list>
+        <a routerLink="./operacion" mat-list-item (click)="sidenav.toggle()">
+            <mat-icon mat-list-icon>add</mat-icon>
+            <span>Operaciones</span>
+        </a>
+
+        <a routerLink="./ciudades" mat-list-item (click)="sidenav.toggle()">
+            <mat-icon mat-list-icon>location_city</mat-icon>
+            <span>Ciudades</span>
+        </a>
+
+        <a routerLink="./flat" mat-list-item (click)="sidenav.toggle()">
+            <mat-icon mat-list-icon>pages</mat-icon>
+            <span>Flat Array</span>
+        </a>
+
+    </mat-nav-list>
+
+</mat-sidenav>
+
+<mat-toolbar>
+    <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+    </button>
+</mat-toolbar>
