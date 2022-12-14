@@ -2,7 +2,7 @@
 
 Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli) version 14.2.10.
 
-## requisitos
+## Requisitos
 - Node: ^16.10.0
 - AngularCLI: ^14.2.0
 
