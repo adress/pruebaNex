@@ -15,13 +15,15 @@ export class OperacionComponent {
   callOperacion() {
     const mensajesLocal = [];
 
-    const numero1 = (document.querySelector("#numero1") as HTMLInputElement).value;
-    const numero2 = (document.querySelector("#numero2") as HTMLInputElement).value;
+    let numero1 = (document.querySelector("#numero1") as HTMLInputElement).value;
+    let numero2 = (document.querySelector("#numero2") as HTMLInputElement).value;
 
-    if (numero1 == '') {
+    if (!numero1) {
+      numero1 = '1';
       mensajesLocal.push('Como el numero 1 no fue asigando tomara por defecto el valor de 1')
     }
-    if (numero2 == '') {
+    if (!numero2) {
+      numero2 = '1';
       mensajesLocal.push('Como el numero 2 no fue asigando tomara por defecto el valor de 1')
     }
 
